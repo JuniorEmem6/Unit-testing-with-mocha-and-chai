@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-const users = [];
+const users = []
 
 app.get("/users", (req, res) => {
   return res.send(users);
